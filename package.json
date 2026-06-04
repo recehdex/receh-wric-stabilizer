@@ -1,0 +1,12 @@
+{
+  "name": "receh-wric-stabilizer-bot",
+  "version": "1.0.0",
+  "description": "Bot stabilizer RECEH/WRIC",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "ethers": "^5.7.2"
+  }
+}
