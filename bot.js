@@ -8,10 +8,12 @@ const CONFIG = {
   factories: {
     recehdex: "0xAeEdf8B9925c6316171f7c2815e387DE596Fa11B",
     fireswap: "0x6ed514BC91CBD202C21Bbc494d05C49fCe4bAbEf",
+    fixswap: "0x67d377767EdE94F12Ed6203CB0FCd02c824D3536",
   },
   routers: {
     recehdex: "0x8E9556415124b6C726D5C3610d25c24Be8AC2304",
     fireswap: "0x2125Ea3C076298F13CA95e807607AE7A1369E1a8",
+    fixswap: "0xAD44b9D1ee10A0d12911Df2295908C30d2904aB8",
   },
   slippageBps: 10000,
   gasLimit: 170000,
