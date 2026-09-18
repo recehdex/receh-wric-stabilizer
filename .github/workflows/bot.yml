@@ -2,26 +2,26 @@ name: Run RECEH-WRIC Stabilizer Bot
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 */2 * * *'
   workflow_dispatch:
 
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-    
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-    
-    - name: Install dependencies
-      run: npm install
-      
-    - name: Run bot
-      env:
-        PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-      run: node bot.js
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run bot
+        env:
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+        run: node bot.js
